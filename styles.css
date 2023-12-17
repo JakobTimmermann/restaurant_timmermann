@@ -1,0 +1,753 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  cursor: default;
+  background: #d6dde5;
+  background: -moz-linear-gradient(left, #d7dde5 0%, #d2dbe5 50%, #d7dde5 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #d7dde5), color-stop(50%, #d2dbe5), color-stop(100%, #d7dde5));
+  background: -webkit-linear-gradient(left, #d7dde5 0%, #d2dbe5 50%, #d7dde5 100%);
+  background: -o-linear-gradient(left, #d7dde5 0%, #d2dbe5 50%, #d7dde5 100%);
+  background: -ms-linear-gradient(left, #d7dde5 0%, #d2dbe5 50%, #d7dde5 100%);
+  background: linear-gradient(to right, #d7dde5 0%, #d2dbe5 50%, #d7dde5 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#d6dde5', endColorstr='#d6dde5', GradientType=1)
+}
+
+.page1 {
+  position: relative;
+  width: 900px;
+  height: 800px;
+  margin: 0 auto;
+  margin-top: -10px
+}
+
+.plate1 {
+  position: absolute;
+  top: 150px;
+  left: 0px;
+  transform: rotate(45deg); 
+  -moz-transition: 0.8s ease-out all;
+  -webkit-transition: 0.8s ease-out all;
+  -o-transition: 0.8s ease-out all;
+  -ms-transition: 0.8s ease-out all;
+  transition: 0.8s ease-out all
+}
+
+.plate1-active {
+  left: -250px;
+  transform: rotate(0deg)
+}
+
+.body-wrap-title,
+.body-wrap {
+  margin-top: 15vh;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #2D3A4B;
+  color: #fff;
+  -moz-transition: 0.6s ease-out all;
+  -webkit-transition: 0.6s ease-out all;
+  -o-transition: 0.6s ease-out all;
+  -ms-transition: 0.6s ease-out all;
+  transition: 0.6s ease-out all;
+  box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.5)
+}
+
+.body-wrap-title {
+  margin-top: 35vh;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 20px;
+  font-family: "Oswald";
+  font-weight: 700;
+}
+
+.page1-menu {
+  letter-spacing: 10px;
+  margin-top: 2vh;
+  font-size: 2.5rem;
+}
+
+.page1-menu-active {
+  font-size: 3rem;
+}
+
+.page1-title {
+  width: 100%;
+  z-index: 99;
+  margin-top: 10vh;
+  left: 20px;
+  font-size: 3rem;
+  -moz-transition: 0.6s ease-out all;
+  -webkit-transition: 0.6s ease-out all;
+  -o-transition: 0.6s ease-out all;
+  -ms-transition: 0.6s ease-out all;
+  transition: 0.6s ease-out all
+}
+
+.page1-title-active {
+  font-size: 5rem;
+  text-shadow: 0px 50px 100px rgba(0, 0, 0, 0.4)
+}
+
+.page1-desc {
+  z-index: 98;
+  position: absolute;
+  top: 370px;
+  width: 85%;
+  left: 235px;
+  padding: 50px;
+  padding-left: 110px;
+  padding-top: 120px;
+  -moz-transition: 0.6s ease-out all;
+  -webkit-transition: 0.6s ease-out all;
+  -o-transition: 0.6s ease-out all;
+  -ms-transition: 0.6s ease-out all;
+  transition: 0.6s ease-out all
+}
+
+.page1-desc-active {
+  left: 215px;
+  top: 400px;
+  padding-left: 120px;
+  background: rgba(91, 105, 118, 0.9);
+  box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.4)
+}
+
+.page1-desc h3 {
+  font-family: "Oswald";
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 10px
+}
+
+.page1-desc hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 280px;
+  opacity: 0.5
+}
+
+.page1-desc p {
+  width: 460px;
+  line-height: 40px;
+  font-size: 1.33rem;
+  opacity: 0.8
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}
+
+.page2 {
+  position: relative;
+  width: 900px;
+  height: 800px;
+  margin: 0 auto
+}
+
+.pg2-middle-wrap {
+  position: absolute;
+  top: 50%;
+  margin-top: -250px;
+  left: 0;
+  width: 100%;
+  height: 500px
+}
+
+.pg2-green-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: -15%;
+  right: 0%;
+  background: rgba(229, 188, 106, 0.9);
+  -moz-transition: 0.6s ease-out all;
+  -webkit-transition: 0.6s ease-out all;
+  -o-transition: 0.6s ease-out all;
+  -ms-transition: 0.6s ease-out all;
+  transition: 0.6s ease-out all
+}
+
+.pg2-green-back-active {
+  width: 130%;
+  right: -20%;
+  box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.4)
+}
+
+.pg2-white-desc {
+  position: absolute;
+  width: 60%;
+  top: 0%;
+  left: 0%;
+  background: #FFF;
+  color: #2D3A4B;
+  text-align: center;
+  -moz-transition: 1s ease-out all;
+  -webkit-transition: 1s ease-out all;
+  -o-transition: 1s ease-out all;
+  -ms-transition: 1s ease-out all;
+  transition: 1s ease-out all
+}
+
+.pg2-white-desc-active {
+  top: -10%;
+  left: -20%;
+  box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.4)
+}
+
+.pg2-white-desc .hr1 {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+  opacity: 0.4
+}
+
+.pg2-white-desc .hr2 {
+  width: 40%;
+  margin: 0 auto;
+  opacity: 0.4;
+  margin-bottom: 5px
+}
+
+.pg2-white-desc .hr3 {
+  width: 60%;
+  margin: 0 auto;
+  opacity: 0.4
+}
+
+.pg2-white-desc .hr4 {
+  width: 60%;
+  margin: 0 auto;
+  opacity: 0.4;
+  margin-bottom: 5px
+}
+
+.pg2-white-desc .hr5 {
+  width: 40%;
+  margin: 0 auto;
+  opacity: 0.4
+}
+
+.pg2-white-desc .hr6 {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  opacity: 0.4
+}
+
+.pg2-white-desc h3 {
+  color: #D39F8C;
+  margin: 60px;
+  font-size: 2rem
+}
+
+.pg2-white-desc h2 {
+  font-family: "Oswald";
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: 10px;
+  opacity: 0.8
+}
+
+.pg2-white-desc p {
+  width: 60%;
+  font-size: 1.4rem;
+  opacity: 0.8;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  line-height: 30px
+}
+
+.pg2-photo-wrap {
+  position: absolute;
+  width: 70%;
+  height: 120%;
+  top: -20%;
+  right: 0;
+  background: #333;
+  overflow: hidden;
+  -moz-transition: 0.6s ease-out all;
+  -webkit-transition: 0.6s ease-out all;
+  -o-transition: 0.6s ease-out all;
+  -ms-transition: 0.6s ease-out all;
+  transition: 0.6s ease-out all
+}
+
+.pg2-photo-wrap-active {
+  right: -10%;
+  box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.4)
+}
+
+.pg2-photo {
+  position: absolute;
+  left: 0;
+  width: 120%;
+  height: 100%;
+  background-image: url("gang1.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -moz-transition: 4s ease-out all;
+  -webkit-transition: 4s ease-out all;
+  -o-transition: 4s ease-out all;
+  -ms-transition: 4s ease-out all;
+  transition: 4s ease-out all
+}
+
+.pg2-photo-active {
+  left: -20%
+}
+
+.gang1 {
+  position: absolute;
+  top: 390px;
+  left: 0px;
+  -moz-transition: 0.6s ease-out all;
+  -webkit-transition: 0.6s ease-out all;
+  -o-transition: 0.6s ease-out all;
+  -ms-transition: 0.6s ease-out all;
+  transition: 0.6s ease-out all
+}
+
+.gang1-active {
+  left: -390px
+}
+
+.page3 {
+  position: relative;
+  width: 900px;
+  height: 800px;
+  margin: 0 auto
+}
+
+.pg3-middle-wrap {
+  position: absolute;
+  top: 50%;
+  margin-top: -250px;
+  left: 0;
+  width: 100%;
+  height: 500px
+}
+
+.pg3-red-back {
+  position: absolute;
+  width: 100%;
+  height: 115%;
+  top: -20%;
+  left: 0;
+  background: rgba(199, 63, 56, 0.9);
+  -moz-transition: 0.6s ease-out all;
+  -webkit-transition: 0.6s ease-out all;
+  -o-transition: 0.6s ease-out all;
+  -ms-transition: 0.6s ease-out all;
+  transition: 0.6s ease-out all
+}
+
+.pg3-red-back-active {
+  box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.4);
+  width: 130%;
+  left: -20%
+}
+
+.pg3-white-desc {
+  position: absolute;
+  width: 60%;
+  bottom: 0;
+  left: 0;
+  background: #FFF;
+  color: #2D3A4B;
+  text-align: center;
+  -moz-transition: 0.4s ease-out all;
+  -webkit-transition: 0.4s ease-out all;
+  -o-transition: 0.4s ease-out all;
+  -ms-transition: 0.4s ease-out all;
+  transition: 0.4s ease-out all
+}
+
+.pg3-white-desc-active {
+  bottom: -10%;
+  left: -10%;
+  box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.4)
+}
+
+.pg3-white-desc .hr1 {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+  opacity: 0.4
+}
+
+.pg3-white-desc .hr2 {
+  width: 40%;
+  margin: 0 auto;
+  opacity: 0.4;
+  margin-bottom: 5px
+}
+
+.pg3-white-desc .hr3 {
+  width: 60%;
+  margin: 0 auto;
+  opacity: 0.4
+}
+
+.pg3-white-desc .hr4 {
+  width: 60%;
+  margin: 0 auto;
+  opacity: 0.4;
+  margin-bottom: 5px
+}
+
+.pg3-white-desc .hr5 {
+  width: 40%;
+  margin: 0 auto;
+  opacity: 0.4
+}
+
+.pg3-white-desc .hr6 {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  opacity: 0.4
+}
+
+.pg3-white-desc h3 {
+  color: #BA945C;
+  margin: 60px;
+  font-size: 2rem
+}
+
+.pg3-white-desc h2 {
+  font-family: "Oswald";
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: 10px;
+  opacity: 0.8
+}
+
+.pg3-white-desc p {
+  width: 60%;
+  font-size: 1.4rem;
+  opacity: 0.8;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  line-height: 30px
+}
+
+.pg3-photo-wrap {
+  position: absolute;
+  width: 100%;
+  height: 105%;
+  bottom: 0;
+  right: 0;
+  background: #333;
+  overflow: hidden;
+  -moz-transition: 1s ease-out all;
+  -webkit-transition: 1s ease-out all;
+  -o-transition: 1s ease-out all;
+  -ms-transition: 1s ease-out all;
+  transition: 1s ease-out all
+}
+
+.pg3-photo-wrap-active {
+  width: 100%;
+  right: -20%;
+  box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.4)
+}
+
+.pg3-photo {
+  position: absolute;
+  left: -20%;
+  width: 120%;
+  height: 100%;
+  background-image: url("maronencremesuppe.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -moz-transition: 4s ease-out all;
+  -webkit-transition: 4s ease-out all;
+  -o-transition: 4s ease-out all;
+  -ms-transition: 4s ease-out all;
+  transition: 4s ease-out all
+}
+
+.pg3-photo-active {
+  left: 0
+}
+
+.schokolade,
+.rosmarin {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  -moz-transition: 0.6s ease-out all;
+  -webkit-transition: 0.6s ease-out all;
+  -o-transition: 0.6s ease-out all;
+  -ms-transition: 0.6s ease-out all;
+  transition: 0.6s ease-out all
+}
+
+.schokolade-active {
+  right: -500px;
+  bottom: -100px;
+}
+
+.rosmarin-active {
+  right: -450px
+}
+
+.page4,
+.page5 {
+  position: relative;
+  width: 900px;
+  height: 800px;
+  margin: 0 auto
+}
+
+.pg4-middle-wrap,
+.pg5-middle-wrap {
+  position: absolute;
+  top: 50%;
+  margin-top: -250px;
+  left: 0;
+  width: 100%;
+  height: 500px
+}
+
+.pg4-bezh-back,
+.pg5-bezh-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  background: rgba(252, 219, 136, 0.9);
+  -moz-transition: 0.6s ease-out all;
+  -webkit-transition: 0.6s ease-out all;
+  -o-transition: 0.6s ease-out all;
+  -ms-transition: 0.6s ease-out all;
+  transition: 0.6s ease-out all
+}
+
+.pg5-bezh-back {
+  background-color: #5e3c08b5;
+}
+
+.pg5-bezh-back-active {
+  width: 120%;
+  bottom: -15%;
+  right: -15%;
+  box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.4)
+}
+
+.pg4-bezh-back-active {
+  width: 130%;
+  bottom: -15%;
+  right: -20%;
+  box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.4)
+}
+
+.pg4-white-desc,
+.pg5-white-desc {
+  position: absolute;
+  width: 60%;
+  top: 0;
+  left: 0;
+  background: #FFF;
+  color: #2D3A4B;
+  text-align: center;
+  -moz-transition: 1s ease-out all;
+  -webkit-transition: 1s ease-out all;
+  -o-transition: 1s ease-out all;
+  -ms-transition: 1s ease-out all;
+  transition: 1s ease-out all
+}
+
+.pg4-white-desc-active,
+.pg5-white-desc-active {
+  width: 60%;
+  top: -10%;
+  left: -20%;
+  box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.4)
+}
+
+.pg4-white-desc .hr1,
+.pg5-white-desc .hr1 {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+  opacity: 0.4
+}
+
+.pg4-white-desc .hr2,
+.pg5-white-desc .hr2 {
+  width: 40%;
+  margin: 0 auto;
+  opacity: 0.4;
+  margin-bottom: 5px
+}
+
+.pg4-white-desc .hr3,
+.pg5-white-desc .hr3 {
+  width: 60%;
+  margin: 0 auto;
+  opacity: 0.4
+}
+
+.pg4-white-desc .hr4,
+.pg5-white-desc .hr4 {
+  width: 60%;
+  margin: 0 auto;
+  opacity: 0.4;
+  margin-bottom: 5px
+}
+
+.pg4-white-desc .hr5,
+.pg5-white-desc .hr5 {
+  width: 40%;
+  margin: 0 auto;
+  opacity: 0.4
+}
+
+.pg4-white-desc .hr6,
+.pg5-white-desc .hr6 {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  opacity: 0.4
+}
+
+.pg4-white-desc h3 {
+  color: #F4AF49;
+  margin: 60px;
+  font-size: 2rem
+}
+
+.pg5-white-desc h3 {
+  color: #5e3c08;
+  margin: 40px;
+  font-size: 2rem
+}
+
+.pg4-white-desc h2,
+.pg5-white-desc h2 {
+  font-family: "Oswald";
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: 10px;
+  opacity: 0.8
+}
+
+.pg4-white-desc p,
+.pg5-white-desc p {
+  width: 60%;
+  font-size: 1.4rem;
+  opacity: 0.8;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  line-height: 30px
+}
+
+.pg4-photo-wrap,
+.pg5-photo-wrap {
+  position: absolute;
+  width: 70%;
+  height: 120%;
+  top: -20%;
+  right: 0;
+  background: #333;
+  overflow: hidden;
+  -moz-transition: 1s ease-out all;
+  -webkit-transition: 1s ease-out all;
+  -o-transition: 1s ease-out all;
+  -ms-transition: 1s ease-out all;
+  transition: 1s ease-out all
+}
+
+.pg4-photo-wrap-active,
+.pg5-photo-wrap-active {
+  right: -10%;
+  box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.4)
+}
+
+.pg4-photo,
+.pg5-photo {
+  position: absolute;
+  left: 0;
+  width: 120%;
+  height: 100%;
+  background-image: url("schokomousse.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -moz-transition: 4s ease-out all;
+  -webkit-transition: 4s ease-out all;
+  -o-transition: 4s ease-out all;
+  -ms-transition: 4s ease-out all;
+  transition: 4s ease-out all
+}
+
+.pg4-photo {
+  background-image: url("fisch.jpg");
+}
+.pg4-photo-active,
+.pg5-photo-active {
+  left: -20%
+}
+
+.page4 .seeteufel,
+.page5 .seeteufel {
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  transform: rotate(30deg);
+  -moz-transition: 0.6s ease-out all;
+  -webkit-transition: 0.6s ease-out all;
+  -o-transition: 0.6s ease-out all;
+  -ms-transition: 0.6s ease-out all;
+  transition: 0.6s ease-out all
+}
+
+.page4 .seeteufel-active,
+.page5 .seeteufel-active {
+  left: -300px;
+  transform: rotate(0deg)
+}
+
+.page6 {
+  position: relative;
+  width: 900px;
+  height: 300px;
+  margin: 0 auto;
+  margin-bottom: 200px
+}
+
+.page6 h3 {
+  position: absolute;
+  bottom: -80px;
+  right: -80px;
+  font-family: "Oswald";
+  font-weight: 700;
+  font-size: 1.6rem;
+  letter-spacing: 10px;
+  padding: 100px;
+  background: rgba(91, 105, 118, 0.9);
+  box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.4)
+}
